@@ -502,7 +502,7 @@ p {
   .about__business-text {
     color: var(--color-secondary-light-san-juan-blue); }
   .about__banner-box {
-    background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+    background: no-repeat url("../assets/shared/desktop/bg-pattern-circle.svg");
     background-size: 60% 65rem;
     background-position: left -95% bottom 0%;
     padding: 10rem 0; }
@@ -808,7 +808,7 @@ input.signup:focus {
   outline: 1px solid var(--color-primary-dark-pink); }
 
 .footer {
-  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background: no-repeat url("../assets/shared/desktop/bg-pattern-circle.svg");
   background-position: right -30rem bottom -5rem;
   background-color: var(--color-secondary-mirage-blue);
   display: flex;
@@ -988,7 +988,7 @@ input.signup:focus {
     text-align: center; }
 
 .simple-ui-ux {
-  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background: no-repeat url("../assets/shared/desktop/bg-pattern-circle.svg");
   background-position: right -60% bottom 50%;
   display: flex;
   justify-content: center;
@@ -1111,7 +1111,7 @@ input.signup:focus {
         margin-top: 0rem; } }
 
 .who-we-work-with {
-  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background: no-repeat url("../assets/shared/desktop/bg-pattern-circle.svg");
   background-position: left -25rem bottom 4rem;
   background-color: var(--color-secondary-mirage-blue);
   display: flex;
@@ -1194,7 +1194,7 @@ input.signup:focus {
 .header {
   margin: 0 auto;
   height: auto;
-  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background: no-repeat url("./assets/shared/desktop/bg-pattern-circle.svg");
   background-position: right -15rem bottom 18rem; }
   @media only screen and (max-width: 65.25em) {
     .header {
@@ -1348,7 +1348,7 @@ input.signup:focus {
 .header-extend {
   margin-bottom: 0;
   padding-bottom: 15rem;
-  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background: no-repeat url("./assets/shared/desktop/bg-pattern-circle.svg");
   background-position: right -15rem bottom 0rem; }
   @media only screen and (max-width: 65.25em) {
     .header-extend {

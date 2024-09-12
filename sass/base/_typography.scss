@@ -1,0 +1,123 @@
+:root {
+  --color-primary-dark-pink: #ba4270;
+  --color-primary-link-water-white: #fbfcfe;
+  --color-secondary-san-juan-blue: #36536b;
+  --color-secondary-mirage-blue: #1b262f;
+  --color-secondary-charm-Pink: #da6d97;
+  --color-secondary-light-san-juan-blue: #6c8294;
+  --color-white: #ffffff;
+  --color-body-background: #edf3f8;
+}
+
+body {
+  margin: 0 auto;
+  font-family: " Public Sans", sans-serif;
+  background-color: var(--color-body-background);
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  max-width: 144rem;
+  min-height: calc(100vh - 2 * 4vw);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Sans", sans-serif;
+  color: var(--color-secondary-san-juan-blue);
+  font-weight: 500;
+}
+.color-water-white {
+  color: var(--color-primary-link-water-white);
+}
+.heading-primary-large {
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  @media only screen and (max-width: $bp-medium-tab) {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+.heading-primary-small {
+  font-size: 5.6rem;
+  line-height: 5.6rem;
+  @media only screen and (max-width: $bp-medium-tab) {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+.heading-secondary-extend {
+  color: var(--color-secondary-san-juan-blue) !important;
+}
+
+.heading-tertiary-big {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.heading-tertiary-small {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+.heading-quaternary {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.width-80 {
+  width: 80%;
+  @media only screen and (max-width: $bp-large) {
+    width: 0%;
+  }
+}
+
+.sticky {
+  position: fixed !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  z-index: 999;
+}
+
+.section {
+  transition: all 0.5s ease-in-out;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy-img {
+  filter: blur(20px);
+}
+
+.hidden {
+  opacity: 0;
+  display: none !important;
+  width: 0;
+  height: 0;
+}

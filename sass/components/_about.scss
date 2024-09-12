@@ -1,0 +1,251 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: -10rem;
+
+  &__heading-text-details {
+    @media only screen and (max-width: $bp-medium) {
+      margin-top: -2rem;
+    }
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-top: -12rem;
+  }
+
+  &__header {
+    display: flex;
+    padding: 0 12rem;
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 5rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 2.8rem;
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1.8rem;
+    }
+  }
+
+  &__vision-business {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30rem 0 12rem;
+    gap: 5rem;
+    margin-bottom: -5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 0 5rem;
+    }
+    @media only screen and (max-width: $bp-medium-tab) {
+      margin-bottom: 0rem;
+      gap: 2.8rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1.8rem;
+    }
+  }
+  &__vision {
+    display: flex;
+    padding: 0;
+    @media only screen and (max-width: $bp-medium-tab) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1.8rem;
+    }
+  }
+
+  &__business {
+    display: flex;
+    padding: 0;
+    @media only screen and (max-width: $bp-medium-tab) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1.8rem;
+    }
+  }
+  &__vision-header {
+    width: 85rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 100%;
+    }
+  }
+  &__vision-text {
+    color: var(--color-secondary-light-san-juan-blue);
+  }
+  &__business-header {
+    width: 70rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 100%;
+    }
+  }
+  &__business-text {
+    color: var(--color-secondary-light-san-juan-blue);
+  }
+
+  &__banner-box {
+    background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+    background-size: 60% 65rem;
+    background-position: left -95% bottom 0%;
+    padding: 10rem 0;
+    @media only screen and (max-width: $bp-medium-tab) {
+      padding: 5rem 0;
+      background: var(--color-body-background);
+    }
+  }
+  &__banner {
+    max-width: 100%;
+    width: 144rem;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  &__our-details {
+    display: flex;
+    padding: 0 12rem;
+    gap: 5rem;
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      gap: 2rem;
+      padding: 0 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__our-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 1px solid var(--color-secondary-light-san-juan-blue);
+    border-bottom: 1px solid var(--color-secondary-light-san-juan-blue);
+    padding: 2rem 0 4rem 0;
+    @media only screen and (max-width: $bp-small) {
+      gap: 1.8rem;
+      padding: 2rem 0;
+    }
+  }
+  &__our-text {
+    font-size: 1.6rem;
+    color: var(--color-secondary-light-san-juan-blue);
+  }
+  &__our-count {
+    font-size: 5.6rem;
+    color: var(--color-primary-dark-pink);
+  }
+  &__culture-people {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 30rem 0 12rem;
+    margin: 5rem 0;
+    @media only screen and (max-width: $bp-large) {
+      padding: 0 5rem;
+    }
+    @media only screen and (max-width: $bp-medium-tab) {
+      gap: 2.8rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1.8rem;
+    }
+  }
+
+  &__culture {
+    display: flex;
+    padding: 0;
+    @media only screen and (max-width: $bp-medium-tab) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 2rem;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0 1.8rem;
+    }
+  }
+
+  &__people {
+    display: flex;
+    padding: 0;
+    @media only screen and (max-width: $bp-medium-tab) {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  }
+
+  &__culture-header {
+    width: 85rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 100%;
+    }
+  }
+  &__culture-text {
+    color: var(--color-secondary-light-san-juan-blue);
+  }
+  &__people-header {
+    width: 48rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      width: 100%;
+    }
+  }
+  &__people-text {
+    color: var(--color-secondary-light-san-juan-blue);
+  }
+}
+
+.empty-row:empty::after {
+  content: ".";
+  visibility: hidden;
+}
+.remove-border-all {
+  @media only screen and (max-width: $bp-small) {
+    border: 0 !important;
+  }
+}
+
+.remove-border-top {
+  @media only screen and (max-width: $bp-small) {
+    border-top: 0 !important;
+  }
+}
+
+.remove-border-bottom {
+  @media only screen and (max-width: $bp-small) {
+    border-bottom: 0 !important;
+  }
+}

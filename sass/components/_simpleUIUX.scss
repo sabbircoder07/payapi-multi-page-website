@@ -1,0 +1,68 @@
+.simple-ui-ux {
+  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: right -60% bottom 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 15rem 12rem;
+  margin-bottom: -10rem;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 15rem 5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    background: var(--color-body-background);
+    flex-direction: column-reverse;
+    gap: 0rem;
+    padding: 0rem 5rem;
+    margin: 2rem 0rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-tab) {
+    margin: 0rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0rem 2rem;
+    margin: 2rem 0rem;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0rem 1.8rem;
+  }
+
+  &__text-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__text {
+    color: var(--color-secondary-light-san-juan-blue);
+  }
+  &__img-box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__img {
+    width: 62rem;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    @media only screen and (max-width: $bp-medium) {
+      max-width: 100%;
+      margin-bottom: -2rem;
+    }
+  }
+}

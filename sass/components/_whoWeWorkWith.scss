@@ -1,0 +1,95 @@
+.who-we-work-with {
+  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: left -25rem bottom 4rem;
+  background-color: var(--color-secondary-mirage-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 8rem 12rem;
+  @media only screen and (max-width: $bp-largest) {
+    padding: 8rem 5rem;
+    gap: 5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column-reverse;
+    background-position: right 7.5rem top -55rem;
+    margin-top: 10rem;
+  }
+  @media only screen and (max-width: $bp-medium-tab) {
+    background-position: right 0.5rem top -55rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-position: right -8rem top -60rem;
+    padding: 5rem 2rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    background-position: right -20rem top -58rem;
+    padding: 5rem 1.8rem;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.2rem;
+    width: 35%;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  &__text {
+    color: var(--color-primary-link-water-white);
+  }
+  &__logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 50%;
+    height: 12rem;
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      height: auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      gap: 1.8rem;
+      height: auto;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      gap: 1.8rem;
+      height: auto;
+      &:not(:last-child) {
+        margin-bottom: 1.8rem;
+      }
+    }
+  }
+  &__logo {
+    width: 15rem;
+    height: 3.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__logo:hover {
+    transform: scale(1.05);
+  }
+
+  &__logo path {
+    fill: var(--color-primary-link-water-white);
+  }
+}

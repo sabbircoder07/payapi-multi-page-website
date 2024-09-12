@@ -1,0 +1,117 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 5rem 12rem;
+  margin-top: -15rem;
+  @media only screen and (max-width: $bp-medium) {
+    align-items: center;
+    padding: 0rem 5rem;
+  }
+  @media only screen and (max-width: $bp-medium-tab) {
+    align-items: center;
+    gap: 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    padding: 0rem 2rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 0rem 1.8rem;
+  }
+  &__options {
+    display: flex;
+    gap: 5rem;
+    @media only screen and (max-width: $bp-large) {
+      margin-bottom: 5rem;
+    }
+    @media only screen and (max-width: $bp-medium-tab) {
+      gap: 0rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__options:last-child {
+    @media only screen and (max-width: $bp-medium-tab) {
+      margin-bottom: 4rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__option {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @media only screen and (max-width: $bp-medium-tab) {
+      align-items: center;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem;
+    }
+  }
+  &__option-header {
+    font-family: "DM Sans", sans-serif;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    font-weight: 600;
+    color: var(--color-primary-dark-pink);
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+  &__option-text {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: var(--color-secondary-light-san-juan-blue);
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+    }
+  }
+  &__option-price {
+    width: 100%;
+    font-size: 5.6rem;
+    line-height: 5.6rem;
+    color: var(--color-secondary-san-juan-blue);
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-secondary-light-san-juan-blue);
+    padding-bottom: 3rem;
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      font-size: 4.8rem;
+      line-height: 5.6rem;
+    }
+  }
+  &__option-fasalities {
+    width: 100%;
+    border-bottom: 1px solid var(--color-secondary-light-san-juan-blue);
+    padding-bottom: 3rem;
+  }
+  &__option-fasalitie {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: var(--color-secondary-light-san-juan-blue);
+    opacity: 0.7;
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+    }
+  }
+}
+
+.fasalitie {
+  padding-left: 3rem !important;
+  width: 12rem;
+}
+.active-fasalitie {
+  color: var(--color-secondary-mirage-blue);
+  font-weight: 600;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 0 !important;
+}

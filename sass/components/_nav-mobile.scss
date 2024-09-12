@@ -1,0 +1,101 @@
+.mobile-nav-bar {
+  @media only screen and (max-width: $bp-small) {
+    width: 30rem;
+    height: auto !important;
+    padding: 2rem !important;
+    background-color: var(--color-secondary-mirage-blue) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    color: var(--color-primary-link-water-white);
+    min-height: calc(100vh - 2 * 4vw);
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    width: 25rem;
+  }
+}
+.close-icon-box {
+  width: 100%;
+  border-bottom: 1px solid var(--color-primary-link-water-white);
+  text-align: right;
+  position: relative;
+}
+.close-icon-logo {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin: 1.8rem 0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.mobile-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    font-size: 1.5rem;
+    width: 6rem;
+    letter-spacing: 1px;
+    color: var(--color-primary-link-water-white);
+    text-decoration: none;
+    text-transform: capitalize;
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
+  }
+  &__link:hover {
+    color: var(--color-primary-link-water-white);
+    font-weight: bold;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.hidden-mobile-menu {
+  opacity: 0;
+  display: none !important;
+  width: 0;
+  height: 0;
+}
+
+.hidden-mobile-icon {
+  opacity: 0;
+  display: none !important;
+  width: 0;
+  height: 0;
+  @media only screen and (max-width: $bp-small) {
+    opacity: 1;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 2rem;
+  }
+}
+
+.hidden-nav-bar {
+  @media only screen and (max-width: $bp-small) {
+    opacity: 0;
+    display: none !important;
+  }
+}
+
+.hidden-nav-cta {
+  @media only screen and (max-width: $bp-small) {
+    opacity: 0;
+    display: none !important;
+    width: 0;
+    height: 0;
+  }
+}
+
+.mobile-logo {
+  cursor: pointer;
+  padding-top: 0rem;
+}

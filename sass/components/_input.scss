@@ -1,0 +1,92 @@
+form {
+  display: flex;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 0;
+}
+
+input.signup {
+  width: 30.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  font-family: inherit;
+  border-radius: 3rem;
+  padding: 1.4rem 5.2rem 1.4rem 1.8rem;
+  cursor: text;
+  color: var(--color-secondary-san-juan-blue);
+  margin-right: -5rem;
+  overflow: hidden;
+  background-color: var(--color-primary-link-water-white);
+  transition: all 0.3s ease-in-out;
+  @media only screen and (max-width: $bp-medium) {
+    width: 35.5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0rem;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    width: 100%;
+  }
+}
+
+input.signup::placeholder {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-secondary-light-san-juan-blue);
+  opacity: 0.5;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s; /* Firefox */
+}
+
+input.signup::-ms-input-placeholder {
+  /* Edge 12-18 */
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-secondary-light-san-juan-blue);
+  opacity: 0.5;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in, transform 0.2s ease-in 0.6s;
+}
+
+input.signup:focus::placeholder {
+  padding-left: 16.5rem;
+  transform: rotate(90deg);
+  transform: translateY(-5rem);
+}
+
+input.signup:not(:placeholder-shown):not(:focus):required:invalid {
+  border: none;
+  border: 1px solid #ff0000;
+}
+
+input.signup:required:invalid::placeholder {
+  color: #ff0000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: 1;
+}
+
+input.signup:required:invalid {
+  border: none;
+  border: 1px solid #ff0000;
+}
+
+input.signup:not(:placeholder-shown):not(:focus):invalid::placeholder {
+  color: #ff0000;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+input.signup:not(:placeholder-shown):not(:focus):valid {
+  background-color: var(--color-white) !important;
+  border: 1px solid green;
+}
+
+input.signup:focus {
+  outline: 0;
+  outline: 1px solid var(--color-primary-dark-pink);
+}

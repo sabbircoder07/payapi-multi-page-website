@@ -1,0 +1,192 @@
+.header {
+  margin: 0 auto;
+  height: auto;
+  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: right -15rem bottom 18rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 5rem;
+    background-position: right -4rem top -50.4rem;
+  }
+
+  @media only screen and (max-width: $bp-medium-tab) {
+    background-position: right -2rem top -50.4rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    background-position: right -8rem top -50.4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    background-position: right -20rem top -50.4rem;
+  }
+
+  .logo {
+    height: 3.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      transform: translateY(-2px) scale(1.08);
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      max-width: 100%;
+      width: 2.8rem;
+      height: auto;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+  .logo-link {
+    text-decoration: none;
+  }
+  .nav-bar {
+    padding: 1.2rem 12rem 1rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    @media only screen and (max-width: $bp-largest) {
+      padding: 1.2rem 5rem 1rem 5rem;
+      gap: 2rem;
+    }
+    @media only screen and (max-width: $bp-medium-tab) {
+      padding: 1.2rem 2rem 1rem 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      padding: 1.2rem 1.8rem 1rem 1.8rem;
+    }
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+  &-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.8rem;
+    &__link:link,
+    &__link:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 6rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: var(--color-secondary-san-juan-blue);
+      text-decoration: none;
+      text-transform: capitalize;
+      opacity: 0.6;
+      transition: all 0.2s ease-in;
+      @media only screen and (max-width: $bp-medium) {
+        width: 4rem;
+      }
+    }
+    &__link:hover {
+      color: var(--color-secondary-san-juan-blue);
+      font-weight: bold;
+      transform: scale(1.02);
+      opacity: 1;
+    }
+  }
+
+  &-hero {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+    padding: 0rem 12rem;
+    margin-bottom: -5rem;
+    @media only screen and (max-width: $bp-largest) {
+      padding: 0rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      gap: 0rem;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0rem 2rem;
+    }
+  }
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem;
+    }
+  }
+  .hero-img-container {
+    margin: auto;
+    display: block;
+    overflow: hidden;
+    padding-left: 3.2rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: -5rem;
+    }
+  }
+  .hero-img {
+    object-fit: cover;
+    object-position: bottom;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    @media only screen and (max-width: $bp-largest) {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .hero-img:hover {
+    transform: scale(1.02);
+  }
+  .hero-cta {
+    margin-top: 2rem;
+  }
+  .cta-message {
+    margin-top: -1.8rem;
+    font-size: 1.4rem;
+    padding-left: 1.8rem;
+    color: var(--color-secondary-light-san-juan-blue) !important;
+    @media only screen and (max-width: $bp-medium) {
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+  }
+  .contact-us {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-secondary-san-juan-blue) !important;
+  }
+}
+
+.active {
+  color: var(--color-secondary-san-juan-blue) !important;
+  font-weight: bold !important;
+  opacity: 1 !important;
+}
+
+.header-extend {
+  margin-bottom: 0;
+  padding-bottom: 15rem;
+  background: no-repeat url("/assets/shared/desktop/bg-pattern-circle.svg");
+  background-position: right -15rem bottom 0rem;
+  @media only screen and (max-width: $bp-medium) {
+    background-position: right -45rem top -55rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    background-position: right -55rem top -55rem;
+  }
+}

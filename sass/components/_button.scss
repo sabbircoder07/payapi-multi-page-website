@@ -1,0 +1,66 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  &-cta {
+    background-color: var(--color-primary-dark-pink) !important;
+  }
+
+  &-cta:hover {
+    transform: scale(1.02);
+    background-color: var(--color-secondary-charm-Pink) !important;
+  }
+  &__about-us {
+    position: relative;
+    width: 12.8rem;
+    text-align: center;
+    border: 1px solid var(--color-primary-link-water-white) !important;
+  }
+
+  &__about-us::before {
+    content: "";
+    position: absolute;
+    left: -5rem;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-primary-link-water-white) !important;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 0.5s;
+  }
+
+  &__about-us:hover {
+    color: var(--color-secondary-mirage-blue) !important;
+    font-weight: bold !important;
+    transform: scale(1);
+    box-shadow: 4px 5px 17px -4px var(--color-secondary-light-san-juan-blue);
+  }
+
+  &__about-us:hover::before {
+    width: 250%;
+  }
+
+  &-ra {
+    color: var(--color-secondary-san-juan-blue) !important;
+    font-weight: 600 !important;
+    border: 1px solid var(--color-secondary-san-juan-blue) !important;
+  }
+  &-ra:hover {
+    color: var(--color-primary-link-water-white) !important;
+    background-color: var(--color-secondary-san-juan-blue) !important;
+  }
+}
